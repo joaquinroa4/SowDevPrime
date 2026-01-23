@@ -14,7 +14,7 @@ namespace ConexionSQL
     {
         static string connectionstring;
         public static SqlConnection ConexionSQL;
-        static string datasource = "joaqu\\SQLEXPRESS";
+        static string datasource = "localhost\\SQLEXPRESS";
         static string basededatos = "SowDevPrime";
         static SqlCommand Orden;
         static SqlDataReader Lector;
