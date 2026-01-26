@@ -101,8 +101,9 @@ namespace ABM_POO
         {
             ConexionBD.ConectarBD();
             BuscaProovedores(Convert.ToInt32(txt_CuitBuscar.Text));
-
+            InhabilitaTextbox();
             ConexionBD.CierraBD();
+            gpbx_DatosCompra.Enabled = true;
         }
 
         private void BuscaProovedores(int CUIT)
