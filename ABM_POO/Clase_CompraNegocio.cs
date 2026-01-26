@@ -31,7 +31,8 @@ namespace CompraNegocio
         {
             idRemito = IDRemito;
         }
-
+        
+        //Constructor para actualizar compra
         public H_Compra (int IDRemito, int Vendedor, string Subtotal, string Descuento, string Total)
         {
             idRemito = IDRemito;
@@ -68,6 +69,15 @@ namespace CompraNegocio
 
     public class Gestion_H_Compra
     {
-
+        public static DataTable Traer_Compradores()
+        {
+            string query = "Select [Nombre_Usuario], [ID_Usuario] from [dbo].[Usuarios]";
+            DataTable compradores = new DataTable();
+            compradores.Load(ConexionBD.LecturaBD(query));
+            return compradores;
+        }
     }
+    
+
+    
 }

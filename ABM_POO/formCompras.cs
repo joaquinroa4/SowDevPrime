@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ProovedorNegocio;
 using ConexionSQL;
 using System.Data.SqlClient;
+using CompraNegocio;
 
 namespace ABM_POO
 {
@@ -65,6 +65,7 @@ namespace ABM_POO
 
         private void formCompras_Load(object sender, EventArgs e)
         {
+            ConexionBD.ConectarBD();
             panelBtnBuscar.Visible = false;
             lbl_CuitBuscar.Visible = false;
             txt_CuitBuscar.Visible = false;
@@ -72,6 +73,10 @@ namespace ABM_POO
             gpbx_DatosProov.Enabled = false;
             gpbx_DatosCompra.Enabled = false;
             propiedadesDGV();
+            cmbx_Compradores.DataSource = Gestion_H_Compra.Traer_Compradores();
+            cmbx_Compradores.ValueMember = "ID_Usuario";
+            cmbx_Compradores.DisplayMember = "Nombre_Usuario";
+            ConexionBD.CierraBD();
         }
 
         private void propiedadesDGV()
@@ -104,6 +109,7 @@ namespace ABM_POO
             InhabilitaTextbox();
             ConexionBD.CierraBD();
             gpbx_DatosCompra.Enabled = true;
+            btn_Cancelar.Enabled = true;
         }
 
         private void BuscaProovedores(int CUIT)

@@ -74,7 +74,7 @@
             this.lbl_Descuento = new System.Windows.Forms.Label();
             this.lbl_Comprador = new System.Windows.Forms.Label();
             this.txt_Subtotal = new System.Windows.Forms.TextBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cmbx_Compradores = new System.Windows.Forms.ComboBox();
             this.lbl_TotalCompra = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -360,7 +360,7 @@
             this.gpbx_DatosCompra.Size = new System.Drawing.Size(954, 199);
             this.gpbx_DatosCompra.TabIndex = 31;
             this.gpbx_DatosCompra.TabStop = false;
-            this.gpbx_DatosCompra.Text = " ";
+            this.gpbx_DatosCompra.Text = " Datos de Compra";
             // 
             // dgv_Arts
             // 
@@ -557,15 +557,15 @@
             this.txt_Subtotal.Size = new System.Drawing.Size(168, 26);
             this.txt_Subtotal.TabIndex = 35;
             // 
-            // comboBox3
+            // cmbx_Compradores
             // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(465, 519);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(191, 27);
-            this.comboBox3.TabIndex = 37;
+            this.cmbx_Compradores.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbx_Compradores.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbx_Compradores.FormattingEnabled = true;
+            this.cmbx_Compradores.Location = new System.Drawing.Point(465, 519);
+            this.cmbx_Compradores.Name = "cmbx_Compradores";
+            this.cmbx_Compradores.Size = new System.Drawing.Size(191, 27);
+            this.cmbx_Compradores.TabIndex = 37;
             // 
             // lbl_TotalCompra
             // 
@@ -648,7 +648,7 @@
             this.Controls.Add(this.btn_Cancelar);
             this.Controls.Add(this.btn_Guardar);
             this.Controls.Add(this.lbl_TotalCompra);
-            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.cmbx_Compradores);
             this.Controls.Add(this.txt_Subtotal);
             this.Controls.Add(this.lbl_Comprador);
             this.Controls.Add(this.lbl_Descuento);
@@ -718,7 +718,7 @@
         private System.Windows.Forms.Label lbl_Descuento;
         private System.Windows.Forms.Label lbl_Comprador;
         private System.Windows.Forms.TextBox txt_Subtotal;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cmbx_Compradores;
         private System.Windows.Forms.Label lbl_TotalCompra;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel6;
