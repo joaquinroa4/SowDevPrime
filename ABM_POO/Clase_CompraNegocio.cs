@@ -76,6 +76,11 @@ namespace CompraNegocio
             compradores.Load(ConexionBD.LecturaBD(query));
             return compradores;
         }
+
+        public static string Genera_Medio_Insert_Compras(H_Compra X)
+        {
+            return "INSERT INTO [dbo].[Hist_Compras] ([Fecha_hora], [ID_Proovedores]) ";
+        }
     }
     
 
