@@ -100,6 +100,7 @@ namespace ABM_POO
         private void btn_GuardarRemito_Click(object sender, EventArgs e)
         {
             gpbx_DatosProov.Enabled = false;
+            Proovedor_Nuevo();
         }
 
         private void btn_Buscar_Click(object sender, EventArgs e)
@@ -159,6 +160,7 @@ namespace ABM_POO
                 MessageBox.Show("Error al cargar el proovedor:" + ex.Message);
 
             }
+            ConexionBD.CierraBD();
 
         }
     }
