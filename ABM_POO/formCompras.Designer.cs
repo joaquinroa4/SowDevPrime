@@ -193,9 +193,9 @@
             // txt_CuitProov
             // 
             this.txt_CuitProov.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_CuitProov.Location = new System.Drawing.Point(677, 56);
+            this.txt_CuitProov.Location = new System.Drawing.Point(24, 56);
             this.txt_CuitProov.Name = "txt_CuitProov";
-            this.txt_CuitProov.Size = new System.Drawing.Size(258, 26);
+            this.txt_CuitProov.Size = new System.Drawing.Size(289, 26);
             this.txt_CuitProov.TabIndex = 24;
             // 
             // txt_TelfProov
@@ -209,9 +209,9 @@
             // txt_NombreProov
             // 
             this.txt_NombreProov.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_NombreProov.Location = new System.Drawing.Point(24, 56);
+            this.txt_NombreProov.Location = new System.Drawing.Point(677, 56);
             this.txt_NombreProov.Name = "txt_NombreProov";
-            this.txt_NombreProov.Size = new System.Drawing.Size(289, 26);
+            this.txt_NombreProov.Size = new System.Drawing.Size(259, 26);
             this.txt_NombreProov.TabIndex = 22;
             // 
             // lbl_DirecProov
@@ -228,7 +228,7 @@
             // 
             this.lbl_CuitProov.AutoSize = true;
             this.lbl_CuitProov.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_CuitProov.Location = new System.Drawing.Point(672, 27);
+            this.lbl_CuitProov.Location = new System.Drawing.Point(19, 30);
             this.lbl_CuitProov.Name = "lbl_CuitProov";
             this.lbl_CuitProov.Size = new System.Drawing.Size(53, 26);
             this.lbl_CuitProov.TabIndex = 20;
@@ -258,7 +258,7 @@
             // 
             this.lbl_NombreProov.AutoSize = true;
             this.lbl_NombreProov.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_NombreProov.Location = new System.Drawing.Point(19, 30);
+            this.lbl_NombreProov.Location = new System.Drawing.Point(672, 27);
             this.lbl_NombreProov.Name = "lbl_NombreProov";
             this.lbl_NombreProov.Size = new System.Drawing.Size(83, 26);
             this.lbl_NombreProov.TabIndex = 17;

@@ -50,9 +50,10 @@ namespace CompraNegocio
         public string nombre_Proov { get; set; }
         public string email_Proov { get; set; }
         public string telf_Proov { get; set; }
+        public string direc_Proov { get; set; }
 
 
-        public Proovedor (int Cuit, string Nombre, string Email, string Telefono)
+        public Proovedor (int Cuit, string Nombre, string Telefono, string Email, string Direccion)
         {
             Cuit_Proov = Cuit;
             nombre_Proov = Nombre;
@@ -75,6 +76,11 @@ namespace CompraNegocio
             DataTable compradores = new DataTable();
             compradores.Load(ConexionBD.LecturaBD(query));
             return compradores;
+        }
+
+        public static string Proovedor_Nuevo (Proovedor X)
+        {
+            return "INSERT INTO [dbo].[Proovedores] ([Cuit_Proovedor], [Nombre_Proovedor], [Telf_Proovedor], [Email_Proovedor], [Direc_Proovedor]) VALUES (" + X.Cuit_Proov + ", '" + X.nombre_Proov + "', '" + X.telf_Proov + "', '" + X.email_Proov + "', '" + X.direc_Proov + "')";
         }
 
         public static string Genera_Medio_Insert_Compras(H_Compra X)

@@ -139,15 +139,25 @@ namespace ABM_POO
 
         }
 
-        private void InsertaCompra()
+        private void Proovedor_Nuevo()
         {
-            if (cmbx_TipoProov.SelectedItem.ToString() == "Proovedor Existente")
+            int cuit = Convert.ToInt32(txt_CuitProov.Text);
+            string nombre = txt_NombreProov.Text;
+            string telefono = txt_TelfProov.Text;
+            string email = txt_EmailProov.Text;
+            string direccion = txt_DirecProov.Text;
+
+            ConexionBD.ConectarBD();
+            Proovedor proovedorNuevo = new Proovedor(cuit, nombre, telefono, email, direccion);
+            try
             {
-                int cuit = Convert.ToInt32(txt_CuitProov.Text);
-                string nombre = txt_NombreProov.Text;
-                string telefono = txt_TelfProov.Text;
-                string email = txt_EmailProov.Text;
-                string direccion = txt_DirecProov.Text;
+                ConexionBD.EjecutaQuery(Gestion_H_Compra.Proovedor_Nuevo(proovedorNuevo));
+
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error al cargar el proovedor:" + ex.Message);
+
             }
 
         }
