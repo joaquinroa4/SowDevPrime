@@ -429,11 +429,12 @@
             this.btn_AgregarArt.TabIndex = 31;
             this.btn_AgregarArt.Text = "Agregar";
             this.btn_AgregarArt.UseVisualStyleBackColor = true;
+            this.btn_AgregarArt.Click += new System.EventHandler(this.btn_AgregarArt_Click);
             // 
             // txt_Precio
             // 
             this.txt_Precio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Precio.Location = new System.Drawing.Point(599, 58);
+            this.txt_Precio.Location = new System.Drawing.Point(453, 57);
             this.txt_Precio.Name = "txt_Precio";
             this.txt_Precio.Size = new System.Drawing.Size(192, 26);
             this.txt_Precio.TabIndex = 30;
@@ -441,7 +442,7 @@
             // numUpDownCant
             // 
             this.numUpDownCant.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numUpDownCant.Location = new System.Drawing.Point(461, 58);
+            this.numUpDownCant.Location = new System.Drawing.Point(659, 56);
             this.numUpDownCant.Name = "numUpDownCant";
             this.numUpDownCant.Size = new System.Drawing.Size(124, 27);
             this.numUpDownCant.TabIndex = 29;
@@ -450,7 +451,7 @@
             // 
             this.lbl_Precio.AutoSize = true;
             this.lbl_Precio.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Precio.Location = new System.Drawing.Point(594, 29);
+            this.lbl_Precio.Location = new System.Drawing.Point(447, 28);
             this.lbl_Precio.Name = "lbl_Precio";
             this.lbl_Precio.Size = new System.Drawing.Size(141, 26);
             this.lbl_Precio.TabIndex = 28;
@@ -460,7 +461,7 @@
             // 
             this.lbl_CantCompra.AutoSize = true;
             this.lbl_CantCompra.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_CantCompra.Location = new System.Drawing.Point(456, 28);
+            this.lbl_CantCompra.Location = new System.Drawing.Point(654, 27);
             this.lbl_CantCompra.Name = "lbl_CantCompra";
             this.lbl_CantCompra.Size = new System.Drawing.Size(88, 26);
             this.lbl_CantCompra.TabIndex = 27;

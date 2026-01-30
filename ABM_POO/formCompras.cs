@@ -163,5 +163,41 @@ namespace ABM_POO
             ConexionBD.CierraBD();
 
         }
+
+        private void ProductoenGrilla(string codigo, string desc, int precioUnit, decimal cantidad, int subtotal)
+        {
+            bool existe = false;
+
+
+            foreach (DataGridViewRow fila in dgv_Arts.Rows)
+            {
+
+
+                decimal stock = Convert.ToDecimal(fila.Cells["Cantidad"].Value);
+                int subTotal = Convert.ToInt32(fila.Cells["Subtotal"].Value);
+
+                if(fila.Cells["Codigo"].Value != null && fila.Cells["Codigo"].Value.ToString() == txt_CodProd.Text)
+                {
+                    stock = stock + cantidad;
+                    fila.Cells["Cantidad"].Value = stock;
+                    subTotal = subTotal + subtotal;
+                    fila.Cells["Subtotal"].Value = subTotal;
+                    existe = true;
+                    break;
+                }
+
+            }
+            if (!existe)
+            {
+                dgv_Arts.Rows.Add(codigo, desc, precioUnit, cantidad, subtotal);
+            }
+        }
+
+        private void btn_AgregarArt_Click(object sender, EventArgs e)
+        {
+            int subtotal = (Convert.ToInt32(txt_Precio.Text) * Convert.ToInt32(numUpDownCant.Value));
+            ProductoenGrilla(txt_CodProd.Text, txt_DescProd.Text, Convert.ToInt32(txt_Precio.Text), numUpDownCant.Value, subtotal);
+            //dgv_Arts.Rows.Add(txt_CodProd.Text, txt_DescProd.Text, Convert.ToInt32(txt_Precio.Text), numUpDownCant.Value, subtotal);
+        }
     }
 }
